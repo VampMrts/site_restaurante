@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffebee;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rounded-box {
+    background-color: #f8bbd0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #d81b60;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.rounded-box:hover {
+    transform: scale(1.1);
+    background-color: #f48fb1;
+}
+
+.giftcard-section {
+    text-align: center;
+    padding: 2em;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #d81b60;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.description {
+    font-size: 1.2em;
+    margin: 1em 0;
+    animation: fadeIn 1s ease-in-out 0.5s;
+}
+
+.giftcard-options {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    animation: slideIn 1s ease-in-out 1s forwards;
+}
+
+.card-option {
+    background-color: #ffccbc;
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card-option:hover {
+    transform: scale(1.05);
+    background-color: #ffab91;
+}
+
+.buy-button {
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #c2185b;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #f8bbd0;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

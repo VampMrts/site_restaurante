@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf6f0;
+    color: #6c4f7d;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in;
+}
+
+header {
+    background-color: #f8d2d6;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #6c4f7d;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #b5839d;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    animation: slideIn 0.5s ease-in;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: bounceIn 1s;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #6c4f7d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b5839d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}

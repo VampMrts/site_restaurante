@@ -1,0 +1,66 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif; /* Fonte estilizada */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff69b4; /* Cor rosa pastel */
+    animation: fadeIn 1s;
+}
+
+.reservas-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.reservas-container p {
+    text-align: center; /* Centraliza o texto da descrição */
+    font-size: 20px; /* Tamanho da fonte */
+    color: #555; /* Cor do texto */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+}
+
+.reservas-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reserva-item {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffebf0; /* Cor de fundo suave */
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.reserva-item:hover {
+    transform: scale(1.05);
+}
+
+.reservar-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Cor rosa pastel */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reservar-btn:hover {
+    background-color: #ff1493; /* Cor rosa mais escura ao passar o mouse */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
